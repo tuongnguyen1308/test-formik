@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.tool {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.middle {
+    padding-left: 24px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.calendar-picker {
+    position: absolute;
+    background-color: #fff;
+    left: -50%;
+    top: 100%;
+}
+
+.days-label,
+.dates {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  border-bottom: 1px solid #cad2d2;
+}
+
+.date {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: aqua;
+}
