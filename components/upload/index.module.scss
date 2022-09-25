@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.gallery {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  flex-wrap: wrap;
+  width: 932px;
+  align-items: flex-start;
+}

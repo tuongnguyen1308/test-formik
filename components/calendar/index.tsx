@@ -54,9 +54,14 @@ const CustomPickersDay = styled(PickersDay, {
   }),
 })) as React.ComponentType<CustomPickerDayProps>;
 
+const getcurrentDate = () => {
+  console.log("rerender");
+  return new Date();
+};
+
 const Calendar: FC = () => {
   const now = new Date(new Date().toDateString());
-  const [selectedDate, setSelectedDate] = useState(now);
+  const [selectedDate, setSelectedDate] = useState(getcurrentDate);
   const [firstDayOfTheWeek, setFirstDayOfTheWeek] = useState<Date>();
   const [lasttDayOfTheWeek, setLastDayOfTheWeek] = useState<Date>();
   const [week, setWeek] = useState<Date[]>();
